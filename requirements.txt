@@ -1,0 +1,26 @@
+# ── Core Streamlit ────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── LangChain stack ───────────────────────────────────────────────
+langchain>=0.2.16
+langchain-core>=0.2.38
+langchain-community>=0.2.16
+langchain-groq>=0.1.9
+langchain-huggingface>=0.0.3
+
+# ── LangSmith (tracing) ───────────────────────────────────────────
+langsmith>=0.1.140
+
+# ── Vector store ──────────────────────────────────────────────────
+faiss-cpu>=1.7.4
+
+# ── Embeddings ────────────────────────────────────────────────────
+sentence-transformers>=3.0.0
+transformers>=4.40.0
+torch>=2.2.0
+
+# ── PDF loading ───────────────────────────────────────────────────
+pypdf>=4.3.1
+
+# ── Utilities ─────────────────────────────────────────────────────
+python-dotenv>=1.0.1
