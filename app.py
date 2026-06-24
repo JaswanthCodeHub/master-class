@@ -8,8 +8,8 @@ import streamlit as st
 # ── Path Detection ────────────────────────────────────────────────────────────
 # Kaggle competition path (primary)
 KAGGLE_PATH = "/kaggle/input/competitions/niat-masterclass-rag-challenge/zyro-dynamics-hr-corpus/"
-# Fallback for Streamlit Cloud (put PDFs in ./pdfs/ in your repo)
-LOCAL_PATH  = "./pdfs/"
+# Fallback for local / Streamlit Cloud (PDFs in ./corpus/ folder)
+LOCAL_PATH  = "./corpus/"
 
 if os.path.exists(KAGGLE_PATH):
     CORPUS_PATH = KAGGLE_PATH
@@ -285,7 +285,7 @@ st.caption("Powered by Zyro Dynamics HR Policy Corpus · Built with LangChain + 
 if not os.path.exists(CORPUS_PATH):
     st.warning(
         f"⚠️ PDF corpus not found at `{CORPUS_PATH}`.  \n"
-        "For **Streamlit Cloud**: add your 11 PDFs to a `pdfs/` folder in your repo.  \n"
+        "For **Streamlit Cloud**: push your `corpus/` folder (with the 11 PDFs) to your GitHub repo.  \n"
         "For **Kaggle**: make sure the dataset is attached to your notebook.",
         icon="📁",
     )
